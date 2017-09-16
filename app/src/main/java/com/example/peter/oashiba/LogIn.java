@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.EditText;
 
 public class LogIn extends AppCompatActivity {
 
@@ -24,20 +25,6 @@ public class LogIn extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        signInButtonListener();
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
-// Listern for Sign In button
-    public void signInButtonListener() {
-
         Button button = (Button) findViewById(R.id.button_id);
 
         button.setOnClickListener(new OnClickListener() {
@@ -45,14 +32,25 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
 
-                //Intent browserIntent =
-                //        new Intent(Intent.ACTION_VIEW, ));
-                //startActivity(browserIntent);
+                // get EditText by id and store it into "inputTxt"
+                EditText inputTxt = (EditText) findViewById(R.id.edittext);
+
+                // Store EditText - Input in variable
+
+                String name = inputTxt.getText().toString();
+                if (name.equals("Peter")){
+                    logIn();
+                }
 
             }
 
         });
 
+    }
+
+    public void logIn() {
+        Intent myIntent = new Intent(this, AccountSummary.class);
+        startActivity(myIntent);
     }
 
 
