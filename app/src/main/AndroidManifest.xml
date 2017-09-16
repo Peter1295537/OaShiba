@@ -24,7 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccountSummary"></activity>
+        <activity android:name=".AccountSummary" />
+        <activity android:name=".BankSelection" />
+        <activity
+            android:name=".CapitalOneConfirmation"
+            android:label="@string/title_activity_capital_one_confirmation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

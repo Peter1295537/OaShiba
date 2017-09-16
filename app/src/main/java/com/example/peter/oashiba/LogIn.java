@@ -38,7 +38,7 @@ public class LogIn extends AppCompatActivity {
                 // Store EditText - Input in variable
 
                 String name = inputTxt.getText().toString();
-                if (name.equals("Peter")){
+                if (name.equals("Colton Krajcik")){
                     logIn();
                 }
 
@@ -49,7 +49,7 @@ public class LogIn extends AppCompatActivity {
     }
 
     public void logIn() {
-        Intent myIntent = new Intent(this, AccountSummary.class);
+        Intent myIntent = new Intent(this, BankSelection.class);
         startActivity(myIntent);
     }
 

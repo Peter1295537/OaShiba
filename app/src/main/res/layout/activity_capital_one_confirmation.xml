@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.peter.oashiba.LogIn">
+    tools:context="com.example.peter.oashiba.CapitalOneConfirmation">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,8 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_log_in" />
-
+    <include layout="@layout/content_capital_one_confirmation" />
 
     <TextView
         android:id="@+id/text_view_id"
@@ -30,10 +29,23 @@
         android:layout_marginTop="150dp"
         android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:typeface="monospace"
         android:textStyle="bold"
-        android:text="OaShiba" />
+        android:text="Capital One" />
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="225dp"
+        android:ems="10"
+        android:text="Enter Name" android:inputType="text"
+        android:gravity="center_horizontal"
+        />
 
     <EditText
         android:id="@+id/edittext"
@@ -43,7 +55,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="275dp"
         android:ems="10"
-        android:text="Enter Name" android:inputType="text"
+        android:text="Password" android:inputType="text"
         android:gravity="center_horizontal"
         />
 
