@@ -36,7 +36,7 @@
 
 
     <EditText
-        android:id="@+id/edittext"
+        android:id="@+id/capOneSignin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button"
@@ -55,7 +55,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="275dp"
         android:ems="10"
-        android:text="Password" android:inputType="text"
+        android:text="Password" android:inputType="textPassword"
         android:gravity="center_horizontal"
         />
 
