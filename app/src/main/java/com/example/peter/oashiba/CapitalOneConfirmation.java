@@ -34,9 +34,7 @@ public class CapitalOneConfirmation extends AppCompatActivity {
                 // Store EditText - Input in variable
 
                 String name = inputTxt.getText().toString();
-                if (name.equals("Colton Krajcik")){
-                    logIn();
-                }
+                logIn();
 
             }
 
