@@ -61,9 +61,6 @@ public class LogIn extends AppCompatActivity implements OnClickListener {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser!=null) {
-            logIn();
-        }
     }
 
     private void signIn(String email, String password) {
@@ -90,12 +87,6 @@ public class LogIn extends AppCompatActivity implements OnClickListener {
                                     Toast.LENGTH_SHORT).show();
                                                     }
 
-                        // [START_EXCLUDE]
-                        if (!task.isSuccessful()) {
-                            mStatusTextView.setText("You are Signed In");
-                        }
-
-                        // [END_EXCLUDE]
                     }
                 });
         // [END sign_in_with_email]
@@ -132,7 +123,6 @@ public class LogIn extends AppCompatActivity implements OnClickListener {
         int i = v.getId();
         if (i == R.id.email_sign_in_button) {
             signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
-            logIn();
         }
     }
 
