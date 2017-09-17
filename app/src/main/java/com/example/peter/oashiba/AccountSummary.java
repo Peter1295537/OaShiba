@@ -12,7 +12,7 @@ public class AccountSummary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_summary);
 
-        Uri uri = Uri.parse("https://www.example.com");
+        Uri uri = Uri.parse("https://www.oashiba.com");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
